@@ -1,4 +1,7 @@
 import { storiesOf, html } from '@open-wc/demoing-storybook'
+// @ts-ignore
+import { StartLitElement } from '../start-lit-element.js'
+import { LazyElement } from '../lazy-element.js'
 storiesOf('Demo|Example Element', module)
   .add(
     'Start Lit Element',
