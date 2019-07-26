@@ -1,6 +1,7 @@
 # Prototype demo (micro frontend architecture)
 
-This is a hello world setup for rapidly building prototypes that despite being a prototype can be quickly adapted and deployed to GCloud and integrated with a CI system of your choice.
+This is a hello world setup for "rapidly" building prototypes implementing a complex microfrontend architecture.
+Despite being a prototype it can be quickly adapted and deployed to GCloud and integrated with a CI system of your choice.
 
 ## project packages
 
