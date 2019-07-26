@@ -4,11 +4,14 @@
   "description": "",
   "main": "start-lit-element.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "node_modules/.bin/style-dictionary build",
+    "build": "node_modules/.bin/polymer build",
+    "start": "node_modules/.bin/polymer serve",
+    "clean": "rm -rf build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "Andreas Sahle <andreas.sahle@gmail.com> (https://pixelmord.de/)",
   "license": "MIT",
   "dependencies": {
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "@open-wc/demoing-storybook": "^0.3.0",
-    "lit-html": "^1.1.1"
+    "polymer-cli": "^1.9.11",
+    "style-dictionary": "2.8.1"
   }
 }
