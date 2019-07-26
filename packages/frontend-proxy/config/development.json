@@ -1,0 +1,16 @@
+{
+  "cdn": {
+    "url": "http://localhost:7001/cdn"
+  },
+  "parameters": {
+    "servers": {
+      "frontend-api": "http://localhost:7001",
+      "frontend-shell": "http://localhost:7002",
+      "team-product": "http://localhost:7003",
+      "team-checkout": "http://localhost:7004"
+    }
+  },
+  "cache": {
+    "engine": "memorycache"
+  }
+}

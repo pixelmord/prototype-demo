@@ -1,0 +1,59 @@
+version: '2'
+services:
+  frontend-proxy:
+    build: ./packages/frontend-proxy/
+    command: node frontendProxy
+    volumes:
+      - .:/prototype-demo
+    ports:
+      - '7000:7000'
+    networks:
+      - app-network
+  frontend-api:
+    build: ./packages/frontend-api/
+    command: node frontendApi
+    volumes:
+      - .:/prototype-demo
+    ports:
+      - '7001:7001'
+    networks:
+      - app-network
+  frontend-shell:
+    build: ./packages/frontend-shell/
+    command: node frontendShell
+    volumes:
+      - .:/prototype-demo
+    ports:
+      - '7002:7002'
+    networks:
+      - app-network
+  team-product:
+    build: ./packages/team-product/
+    command: node frontendProduct
+    volumes:
+      - .:/prototype-demo
+    ports:
+      - '7003:7003'
+    networks:
+      - app-network
+  team-checkout:
+    build: ./packages/team-checkout/
+    command: node frontendPromotion
+    volumes:
+      - .:/prototype-demo
+    ports:
+      - '7004:7004'
+    networks:
+      - app-network
+  mock-server-api:
+    build: ./packages/mock-server-api/
+    command: node mockApi
+    volumes:
+      - .:/prototype-demo
+    ports:
+      - '7005:7005'
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge

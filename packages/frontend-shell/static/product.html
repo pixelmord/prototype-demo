@@ -1,0 +1,25 @@
+<div cx-use-slot="header">
+  <h2>Productpage as defined in shell</h2>
+</div>
+<div cx-use-slot="main-promotion">
+  <div
+    cx-url="{{server:team-checkout}}/index.html"
+    cx-cache-key="promotion"
+    cx-cache-ttl="10s"
+    class="block"
+  >
+    This will be replaced with some simple content that is cached if a cache is
+    configured.
+  </div>
+</div>
+<div cx-use-slot="main-product">
+  <div
+    cx-url="{{server:team-product}}/default.html"
+    cx-cache-key="product"
+    cx-cache-ttl="10s"
+    class="block"
+  >
+    This will be replaced with some simple content that is cached if a cache is
+    configured.
+  </div>
+</div>

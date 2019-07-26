@@ -2,11 +2,21 @@
   "name": "design-system",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "start-lit-element.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "Andreas Sahle <andreas.sahle@gmail.com> (https://pixelmord.de/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "lit-element": "^2.2.0"
+  },
+  "devDependencies": {
+    "@open-wc/demoing-storybook": "^0.3.0",
+    "lit-html": "^1.1.1"
+  }
 }

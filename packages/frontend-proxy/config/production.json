@@ -1,0 +1,17 @@
+{
+  "cdn": {
+    "url": "http://your.real.cdn"
+  },
+  "parameters": {
+    "servers": {
+      "frontend-shell": "http://a-real-server.com",
+      "frontend-api": "http://a-real-server.com",
+      "team-product": "http://a-real-server.com",
+      "team-checkout": "http://a-real-server.com"
+    }
+  },
+  "cache": {
+    "engine": "redis",
+    "url": "redis://localhost:6379?db=0"
+  }
+}

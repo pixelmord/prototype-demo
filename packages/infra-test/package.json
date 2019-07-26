@@ -1,0 +1,15 @@
+{
+  "name": "infra-test",
+  "version": "0.1.0",
+  "description": "Test the docker containers for integrity.",
+  "main": "run.sh",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "./run.sh"
+  },
+  "keywords": [],
+  "author": "Andreas Sahle <andreas.sahle@gmail.com> (https://pixelmord.de/)",
+  "license": "MIT"
+}
