@@ -1,30 +1,10 @@
-import { storiesOf, html } from '@open-wc/demoing-storybook'
-// @ts-ignore
-import { StartLitElement } from '../start-lit-element.js'
-import { LazyElement } from '../lazy-element.js'
-storiesOf('Demo|Example Element', module)
-  .add(
-    'Start Lit Element',
-    () => html`
-      <start-lit-element>
-        <!-- Placeholders to improve time to first paint -->
-        <h1>Start LitElement!</h1>
-        <p>Hello World from LitElement</p>
+import { storiesOf, html } from '@open-wc/demoing-storybook';
+/* eslint-disable-next-line */
+import { PtyIconButton } from '../pty-icon-button.js';
 
-        <!-- Check for JavaScript -->
-        <p id="jsyes"></p>
-        <script type="text/javascript">
-          document.getElementById('jsyes').innerHTML = 'Loading...'
-        </script>
-        <noscript>
-          Could not render the custom element. Check that JavaScript is enabled.
-        </noscript>
-      </start-lit-element>
-    `
-  )
-  .add(
-    'Lazy Element',
-    () => html`
-      <lazy-element></lazy-element>
-    `
-  )
+storiesOf('Atoms|Icon Button', module).add(
+  'Default',
+  () => html`
+    <pty-icon-button> </pty-icon-button>
+  `,
+);

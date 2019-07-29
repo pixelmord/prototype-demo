@@ -1,27 +1,24 @@
-# Style Dictionary Generated Files (ios)
-ios/assets
-ios/Classes/Generated
+## editors
+/.idea
+/.vscode
 
-# OS X
+## system files
 .DS_Store
 
-# Xcode
-build/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata/
-*.xccheckout
-profile
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
+## npm
+/node_modules/
+/npm-debug.log
 
-# Bundler
-.bundle
+## testing
+/coverage/
+
+## temp folders
+/.tmp/
+/.cache/
+
+# build storybook
+/storybook-static/
+
+## we don't want lock files for now
+yarn.lock
+package-lock.json
