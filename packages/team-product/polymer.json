@@ -14,8 +14,8 @@
         "compile": "es5",
         "transformModulesToAmd": true
       },
-      "addServiceWorker": true,
-      "addPushManifest": true
+      "addServiceWorker": false,
+      "addPushManifest": false
     }
   ]
 }

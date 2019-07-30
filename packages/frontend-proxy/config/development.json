@@ -1,6 +1,6 @@
 {
   "cdn": {
-    "url": "http://localhost:7001/cdn"
+    "url": "http://localhost:7002"
   },
   "parameters": {
     "servers": {

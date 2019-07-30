@@ -1,0 +1,6 @@
+@import '../../design-system/assets/css/variables.css';
+
+.page__header {
+  background: gray;
+  padding: 2rem;
+}

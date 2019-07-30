@@ -15,7 +15,7 @@
     "loader/"
   ],
   "scripts": {
-    "start": "node frontendPromotion.js",
+    "start": "node frontendCheckout.js",
     "build": "stencil build --docs",
     "dev": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",

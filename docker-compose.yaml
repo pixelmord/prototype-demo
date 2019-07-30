@@ -38,7 +38,7 @@ services:
       - app-network
   team-checkout:
     build: ./packages/team-checkout/
-    command: node frontendPromotion
+    command: node frontendCheckout
     volumes:
       - .:/prototype-demo
     ports:

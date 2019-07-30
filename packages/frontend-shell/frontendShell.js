@@ -24,5 +24,5 @@ app.use(function(req, res, next) {
 app.use(serveStatic('static', { index: ['index.html'] }))
 
 app.listen(7002, function() {
-  console.log('Example layout server on http://localhost:7002')
+  console.log('Example layout/frontend shell server on http://localhost:7002')
 })
