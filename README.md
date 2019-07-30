@@ -16,6 +16,7 @@ The frontend shell layout application.
 ### design-system
 
 The design system that consists of design artifacts to build consistent applications.
+Implemented using webcomponents built with litElement and [open-wc](https://open-wc.org/) tooling.
 
 ### team-checkout
 

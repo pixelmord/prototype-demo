@@ -5,9 +5,9 @@ const createBaseConfig = require('./karma.conf.js');
 
 module.exports = config => {
   config.set(
-    merge(bsSettings(config), createBaseConfig(config), {
+    merge(bsSettings(), createBaseConfig(config), {
       browserStack: {
-        project: 'your-name',
+        project: 'prototype-design-system',
       },
     }),
   );

@@ -1,0 +1,4 @@
+**/*.test.js
+/storybook-static/
+/coverage/
+/src/stories/
